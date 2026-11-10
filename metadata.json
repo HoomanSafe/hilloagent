@@ -1,0 +1,8 @@
+{
+  "name": "HiLLO - Trading Agents for Stocks and Crypto",
+  "description": "HiLLO is an open trading-agent infrastructure on Robinhood Chain for tokenized stocks and crypto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
