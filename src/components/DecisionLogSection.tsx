@@ -35,8 +35,9 @@ export const DecisionLogSection: React.FC = () => {
                   padding: '6px 14px',
                   borderRadius: '9999px',
                   border: '1px solid var(--color-border)',
-                  background: actionFilter === 'all' ? 'var(--color-purple-rich)' : 'transparent',
-                  color: actionFilter === 'all' ? '#fff' : 'inherit'
+                  background: actionFilter === 'all' ? 'var(--color-brand-green, #00ee16)' : 'transparent',
+                  color: actionFilter === 'all' ? '#04061a' : 'inherit',
+                  fontWeight: actionFilter === 'all' ? 700 : 500
                 }}
               >
                 All decisions ({DECISIONS_FEED.length})

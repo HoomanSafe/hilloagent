@@ -33,7 +33,7 @@ export const TrackRecordSection: React.FC = () => {
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center', fontSize: '13px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span style={{ width: '12px', height: '3px', background: 'var(--color-purple-rich, #8075ff)', borderRadius: '2px' }}></span>
+                <span style={{ width: '12px', height: '3px', background: 'var(--color-brand-green, #00ee16)', borderRadius: '2px', boxShadow: '0 0 8px rgba(0,238,22,0.6)' }}></span>
                 <span>Palantir Trend (Agent)</span>
                 <strong className="loss" style={{ marginLeft: '4px' }}>−4.3%</strong>
               </div>
@@ -44,8 +44,8 @@ export const TrackRecordSection: React.FC = () => {
                 <strong className="loss" style={{ marginLeft: '4px' }}>−19.0%</strong>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--color-gain-soft, rgba(1,208,98,0.1))', padding: '4px 10px', borderRadius: '9999px' }}>
-                <span style={{ color: 'var(--color-gain, #0a9a4c)', fontWeight: 600 }}>+14.7 pts</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--color-gain-soft, rgba(0,238,22,0.12))', padding: '4px 10px', borderRadius: '9999px', border: '1px solid rgba(0,238,22,0.25)' }}>
+                <span style={{ color: 'var(--color-brand-green, #00ee16)', fontWeight: 700 }}>+14.7 pts</span>
                 <span style={{ color: 'var(--color-text-muted)', fontSize: '12px' }}>vs holding</span>
               </div>
             </div>
@@ -58,6 +58,17 @@ export const TrackRecordSection: React.FC = () => {
               style={{ width: '100%', height: 'auto', display: 'block', overflow: 'visible' }}
               onMouseLeave={() => setHoveredPoint(null)}
             >
+              {/* Glow Filter */}
+              <defs>
+                <filter id="greenGlow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
               {/* Grid Lines */}
               <line x1="8" y1="64" x2="592" y2="64" stroke="var(--color-border, rgba(255,255,255,0.06))" strokeWidth="1" strokeDasharray="3 3" />
               <line x1="8" y1="132" x2="592" y2="132" stroke="var(--color-border, rgba(255,255,255,0.12))" strokeWidth="1" />
@@ -79,20 +90,21 @@ export const TrackRecordSection: React.FC = () => {
                 strokeLinecap="round" 
               />
 
-              {/* HiLLO Agent line (Solid purple/violet) */}
+              {/* HiLLO Agent line (Solid Logo Neon Green with glow) */}
               <path 
                 d="M8.0,131.9 L46.9,87.9 L71.3,115.6 L85.9,81.3 L90.7,64.0 L139.4,64.0 L168.6,83.1 L188.1,77.1 L217.3,75.6 L251.3,118.4 L280.5,112.1 L304.9,148.0 L363.3,148.0 L426.5,155.4 L446.0,143.5 L514.1,143.5 L557.9,147.3 L572.5,142.2 L592.0,142.2" 
                 fill="none" 
-                stroke="var(--color-purple-rich, #8075ff)" 
+                stroke="var(--color-brand-green, #00ee16)" 
                 strokeWidth="2.5" 
                 strokeLinejoin="round" 
                 strokeLinecap="round" 
+                filter="url(#greenGlow)"
               />
 
               {/* Interactive nodes */}
-              <circle cx="85.9" cy="81.3" r="4" fill="var(--color-purple-rich)" />
-              <circle cx="304.9" cy="148.0" r="4" fill="var(--color-purple-rich)" />
-              <circle cx="592.0" cy="142.2" r="5" fill="#01d062" stroke="#fff" strokeWidth="2" />
+              <circle cx="85.9" cy="81.3" r="4" fill="var(--color-brand-green, #00ee16)" />
+              <circle cx="304.9" cy="148.0" r="4" fill="var(--color-brand-green, #00ee16)" />
+              <circle cx="592.0" cy="142.2" r="5" fill="#00ee16" stroke="#fff" strokeWidth="2" />
 
               {/* Axis dates */}
               <text x="8" y="285" fontSize="11" fill="var(--color-text-faint)" textAnchor="start">Oct 11</text>

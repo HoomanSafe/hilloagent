@@ -70,7 +70,7 @@ export const StatsModal: React.FC<StatsModalProps> = ({ isOpen, onClose }) => {
           <div style={{ padding: '16px', borderRadius: '16px', background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
             <span className="muted" style={{ fontSize: '13px', display: 'block' }}>Total Markets Tracked</span>
             <strong style={{ fontSize: '24px', display: 'block', margin: '4px 0' }}>22</strong>
-            <span style={{ fontSize: '12px', color: 'var(--color-purple-rich)' }}>20 Equities · 2 Crypto</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-brand-green, #00ee16)' }}>20 Equities · 2 Crypto</span>
           </div>
 
           <div style={{ padding: '16px', borderRadius: '16px', background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>

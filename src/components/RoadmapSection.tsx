@@ -141,13 +141,13 @@ export const RoadmapSection: React.FC = () => {
                   step="25"
                   value={tradeLimit}
                   onChange={(e) => setTradeLimit(Number(e.target.value))}
-                  style={{ width: '100%', marginTop: '6px', accentColor: 'var(--color-purple-rich)' }}
+                  style={{ width: '100%', marginTop: '6px', accentColor: 'var(--color-brand-green, #00ee16)' }}
                 />
               </div>
 
               <div className="next-stop" onClick={() => setStopSwitchActive(!stopSwitchActive)} style={{ cursor: 'pointer' }}>
                 <span>Stop the agent anytime</span>
-                <span className={`next-switch ${stopSwitchActive ? 'next-switch--on' : ''}`} style={{ background: stopSwitchActive ? 'var(--color-gain, #0a9a4c)' : undefined }}></span>
+                <span className={`next-switch ${stopSwitchActive ? 'next-switch--on' : ''}`} style={{ background: stopSwitchActive ? 'var(--color-brand-green, #00ee16)' : undefined }}></span>
               </div>
             </div>
 
@@ -180,7 +180,7 @@ export const RoadmapSection: React.FC = () => {
                 </span>
                 <strong>Ether</strong>
                 <svg viewBox="0 0 64 24" className="next-coin__spark">
-                  <path d="M2 22 L12 16 L22 19 L32 10 L42 13 L52 6 L62 9" fill="none" stroke="var(--color-gain)" strokeWidth="1.5"></path>
+                  <path d="M2 22 L12 16 L22 19 L32 10 L42 13 L52 6 L62 9" fill="none" stroke="var(--color-brand-green, #00ee16)" strokeWidth="1.5"></path>
                 </svg>
                 <span className="next-skeleton"></span>
               </div>
@@ -191,7 +191,7 @@ export const RoadmapSection: React.FC = () => {
                 </span>
                 <strong>Bitcoin</strong>
                 <svg viewBox="0 0 64 24" className="next-coin__spark">
-                  <path d="M2 18 L12 20 L22 12 L32 15 L42 8 L52 11 L62 5" fill="none" stroke="var(--color-gain)" strokeWidth="1.5"></path>
+                  <path d="M2 18 L12 20 L22 12 L32 15 L42 8 L52 11 L62 5" fill="none" stroke="var(--color-brand-green, #00ee16)" strokeWidth="1.5"></path>
                 </svg>
                 <span className="next-skeleton"></span>
               </div>
@@ -202,7 +202,7 @@ export const RoadmapSection: React.FC = () => {
                 </span>
                 <strong>More tokens</strong>
                 <svg viewBox="0 0 64 24" className="next-coin__spark">
-                  <path d="M2 14 L12 18 L22 15 L32 19 L42 12 L52 14 L62 8" fill="none" stroke="var(--color-purple-rich)" strokeWidth="1.5"></path>
+                  <path d="M2 14 L12 18 L22 15 L32 19 L42 12 L52 14 L62 8" fill="none" stroke="var(--color-brand-green, #00ee16)" strokeWidth="1.5"></path>
                 </svg>
                 <span className="next-skeleton"></span>
               </div>

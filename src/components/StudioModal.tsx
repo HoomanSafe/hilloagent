@@ -87,7 +87,7 @@ export const StudioModal: React.FC<StudioModalProps> = ({
       hoursActive: 0,
       rank: 1,
       trend: 'neutral',
-      color: '#8075ff',
+      color: '#00ee16',
       description: `User-created ${selectedStrategy} paper agent with ${stopLoss} stop-loss.`
     };
 
@@ -182,7 +182,7 @@ export const StudioModal: React.FC<StudioModalProps> = ({
                 style={{
                   padding: '12px',
                   borderRadius: '12px',
-                  border: `1.5px solid ${selectedStrategy === strat.id ? 'var(--color-purple-rich, #8075ff)' : 'var(--color-border, rgba(255,255,255,0.08))'}`,
+                  border: `1.5px solid ${selectedStrategy === strat.id ? 'var(--color-brand-green, #00ee16)' : 'var(--color-border, rgba(255,255,255,0.08))'}`,
                   background: selectedStrategy === strat.id ? 'var(--color-surface, #1e1d24)' : 'transparent',
                   cursor: 'pointer',
                   transition: 'all 0.15s ease'
@@ -201,7 +201,7 @@ export const StudioModal: React.FC<StudioModalProps> = ({
             <label style={{ fontSize: '13px', color: 'var(--color-text-muted)' }}>
               Choose Markets (Up to 3)
             </label>
-            <span style={{ fontSize: '12px', color: 'var(--color-purple-rich)' }}>
+            <span style={{ fontSize: '12px', color: 'var(--color-brand-green, #00ee16)' }}>
               {selectedTokens.length}/3 selected
             </span>
           </div>
@@ -217,9 +217,10 @@ export const StudioModal: React.FC<StudioModalProps> = ({
                     padding: '6px 12px',
                     borderRadius: '9999px',
                     fontSize: '13px',
-                    border: `1px solid ${active ? 'var(--color-purple-rich, #8075ff)' : 'var(--color-border)'}`,
-                    background: active ? 'var(--color-purple-rich, #8075ff)' : 'var(--color-surface)',
-                    color: active ? '#fff' : 'inherit',
+                    border: `1px solid ${active ? 'var(--color-brand-green, #00ee16)' : 'var(--color-border)'}`,
+                    background: active ? 'var(--color-brand-green, #00ee16)' : 'var(--color-surface)',
+                    color: active ? '#04061a' : 'inherit',
+                    fontWeight: active ? 700 : 500,
                     cursor: 'pointer',
                     display: 'flex',
                     alignItems: 'center',
@@ -278,9 +279,9 @@ export const StudioModal: React.FC<StudioModalProps> = ({
                     flex: 1,
                     padding: '8px 0',
                     borderRadius: '8px',
-                    border: `1px solid ${maxHolding === mh ? 'var(--color-purple-rich)' : 'var(--color-border)'}`,
-                    background: maxHolding === mh ? 'rgba(128,117,255,0.1)' : 'transparent',
-                    color: maxHolding === mh ? 'var(--color-purple-rich)' : 'inherit',
+                    border: `1px solid ${maxHolding === mh ? 'var(--color-brand-green, #00ee16)' : 'var(--color-border)'}`,
+                    background: maxHolding === mh ? 'rgba(0, 238, 22, 0.12)' : 'transparent',
+                    color: maxHolding === mh ? 'var(--color-brand-green, #00ee16)' : 'inherit',
                     cursor: 'pointer',
                     fontSize: '13px',
                     fontWeight: 500

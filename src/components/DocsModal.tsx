@@ -68,7 +68,7 @@ export const DocsModal: React.FC<DocsModalProps> = ({ isOpen, onClose }) => {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', fontSize: '14px', lineHeight: '22px' }}>
           <div>
-            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-purple-rich)' }}>
+            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-brand-green, #00ee16)' }}>
               1. Paper Trading Engine
             </h3>
             <p className="muted" style={{ margin: 0 }}>
@@ -77,7 +77,7 @@ export const DocsModal: React.FC<DocsModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <div>
-            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-purple-rich)' }}>
+            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-brand-green, #00ee16)' }}>
               2. Robinhood Chain Tokenized US Equities
             </h3>
             <p className="muted" style={{ margin: 0 }}>
@@ -86,7 +86,7 @@ export const DocsModal: React.FC<DocsModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <div>
-            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-purple-rich)' }}>
+            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-brand-green, #00ee16)' }}>
               3. Transparent Decision Logging
             </h3>
             <p className="muted" style={{ margin: 0 }}>
@@ -95,7 +95,7 @@ export const DocsModal: React.FC<DocsModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <div>
-            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-purple-rich)' }}>
+            <h3 style={{ fontSize: '17px', margin: '0 0 6px 0', color: 'var(--color-brand-green, #00ee16)' }}>
               4. Non-Custodial Real Money Trading
             </h3>
             <p className="muted" style={{ margin: 0 }}>

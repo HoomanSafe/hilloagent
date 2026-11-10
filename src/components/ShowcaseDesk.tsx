@@ -130,14 +130,14 @@ export const ShowcaseDesk: React.FC<ShowcaseDeskProps> = ({
             <div style={{ display: 'flex', gap: 'var(--space-75, 6px)', flexWrap: 'wrap', margin: '14px 0' }}>
               <button 
                 className={`browser__chip ${selectedFilter === 'all' ? 'browser__chip--active' : ''}`}
-                style={{ cursor: 'pointer', borderColor: selectedFilter === 'all' ? 'var(--color-purple-rich)' : undefined }}
+                style={{ cursor: 'pointer', borderColor: selectedFilter === 'all' ? 'var(--color-brand-green, #00ee16)' : undefined }}
                 onClick={() => setSelectedFilter('all')}
               >
                 All strategies
               </button>
               <button 
                 className={`browser__chip ${selectedFilter === 'running' ? 'browser__chip--active' : ''}`}
-                style={{ cursor: 'pointer', borderColor: selectedFilter === 'running' ? 'var(--color-purple-rich)' : undefined }}
+                style={{ cursor: 'pointer', borderColor: selectedFilter === 'running' ? 'var(--color-brand-green, #00ee16)' : undefined }}
                 onClick={() => setSelectedFilter('running')}
               >
                 Running

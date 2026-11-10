@@ -44,8 +44,9 @@ export const MarketsSection: React.FC<MarketsSectionProps> = ({ onSelectMarket }
               borderRadius: '9999px',
               cursor: 'pointer',
               border: '1px solid var(--color-border)',
-              background: filter === 'all' ? 'var(--color-purple-rich)' : 'transparent',
-              color: filter === 'all' ? '#fff' : 'inherit'
+              background: filter === 'all' ? 'var(--color-brand-green, #00ee16)' : 'transparent',
+              color: filter === 'all' ? '#04061a' : 'inherit',
+              fontWeight: filter === 'all' ? 700 : 500
             }}
           >
             All markets ({MARKETS_DATA.length})
@@ -58,8 +59,9 @@ export const MarketsSection: React.FC<MarketsSectionProps> = ({ onSelectMarket }
               borderRadius: '9999px',
               cursor: 'pointer',
               border: '1px solid var(--color-border)',
-              background: filter === 'stock' ? 'var(--color-purple-rich)' : 'transparent',
-              color: filter === 'stock' ? '#fff' : 'inherit'
+              background: filter === 'stock' ? 'var(--color-brand-green, #00ee16)' : 'transparent',
+              color: filter === 'stock' ? '#04061a' : 'inherit',
+              fontWeight: filter === 'stock' ? 700 : 500
             }}
           >
             Stocks (20)
@@ -72,8 +74,9 @@ export const MarketsSection: React.FC<MarketsSectionProps> = ({ onSelectMarket }
               borderRadius: '9999px',
               cursor: 'pointer',
               border: '1px solid var(--color-border)',
-              background: filter === 'crypto' ? 'var(--color-purple-rich)' : 'transparent',
-              color: filter === 'crypto' ? '#fff' : 'inherit'
+              background: filter === 'crypto' ? 'var(--color-brand-green, #00ee16)' : 'transparent',
+              color: filter === 'crypto' ? '#04061a' : 'inherit',
+              fontWeight: filter === 'crypto' ? 700 : 500
             }}
           >
             Crypto & Perps (2)

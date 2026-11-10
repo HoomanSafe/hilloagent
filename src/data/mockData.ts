@@ -216,7 +216,7 @@ export const AGENTS_DATA: AgentItem[] = [
     hoursActive: 13,
     rank: 1,
     trend: 'neutral',
-    color: '#627eea',
+    color: '#00ee16',
     description: 'Fades sharp hourly deviations in perps against rolling 24h moving averages on Robinhood Chain.'
   },
   {
