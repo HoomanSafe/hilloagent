@@ -506,7 +506,7 @@ export const FAQ_ITEMS = [
   }
 ];
 
-export const CONTRACT_ADDRESS = 'TBD';
-export const CONTRACT_ADDRESS_SHORT = 'TBD';
+export const CONTRACT_ADDRESS = '0x748c4696dc0ee7fe4194999c1cc7bb7659a245cd';
+export const CONTRACT_ADDRESS_SHORT = '0x748c469...245cd';
 export const SOCIAL_X_URL = 'https://x.com/HilloAgent';
 export const LOGO_PATH = '/img/brand/hillo-logo.png';
